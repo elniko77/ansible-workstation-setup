@@ -5,10 +5,10 @@ Ansible script to setup my personal laptop and/or workstation. Tested on ubuntu 
 
 You need to have sudo permissions, and install ansible.
 
-Run the playbook with (comment unneeded roles in workstatiosetup.yml):
+Run the playbook with (comment unneeded roles in workstationsetup.yml):
 
 
-    ansible-playbook workstatiosetup.yml
+    ansible-playbook workstationsetup.yml
 
 Roles:
 
