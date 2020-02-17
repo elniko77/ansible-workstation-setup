@@ -1,0 +1,4 @@
+- include_tasks: software.yml
+
+- include_tasks: ohmyzsh.yml
+

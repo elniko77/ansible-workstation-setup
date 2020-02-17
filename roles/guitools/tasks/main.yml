@@ -1,0 +1,7 @@
+- name: Install Graphic Packages
+  become: yes
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ gui_apt_packages }}"

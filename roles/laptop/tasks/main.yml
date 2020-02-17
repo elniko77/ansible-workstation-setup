@@ -1,0 +1,24 @@
+- name: Install Laptop APT Packages
+  become: yes
+  apt:
+    pkg: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ laptop_apt_packages }}"
+
+- name: Copy logind.conf /etc/systemd/
+  become: yes 
+  copy:
+    src: logind.conf
+    dest: "/etc/systemd/"
+    force: yes
+
+- name: Copy sleep.conf /etc/systemd/
+  become: yes 
+  copy:
+    src: sleep.conf
+    dest: "/etc/systemd/"
+    force: yes
+
+
+

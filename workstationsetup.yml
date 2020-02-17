@@ -1,0 +1,22 @@
+---
+    - hosts: 127.0.0.1
+      connection: local
+      roles:
+        - base
+        #- development
+        #- laptop
+        #- guitools
+#        - virtualization
+    
+    #   vars_prompt:
+    #     - name: username
+    #       prompt: "Enter Git username"
+    #       private: no
+    
+    #     - name: email
+    #       prompt: "Enter Git email address"
+    #       private: no
+    
+    #     - name: gpgkey
+    #       prompt: "Enter your GPG signing key"
+    #       private: no

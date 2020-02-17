@@ -1,0 +1,5 @@
+gui_apt_packages:
+    - vlc
+    - gnome-tweaks
+    - arc-theme
+    - papirus-icon-theme

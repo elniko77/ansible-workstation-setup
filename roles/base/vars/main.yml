@@ -1,0 +1,16 @@
+apt_packages:
+    - apt-transport-https
+    - curl
+    - git
+    - htop
+    - jq
+    - nmap
+    - traceroute
+    - unrar
+    - vim
+    - zsh
+    - mc
+    - tmux
+    - irssi   
+
+username: 'nss'
