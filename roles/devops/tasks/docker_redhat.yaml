@@ -1,0 +1,21 @@
+- name: Install docker engine
+  become: yes
+  yum: 
+    name:
+      - moby-engine
+      - docker-compose
+    state: latest
+
+- name: Enable docker engine
+  become: yes
+  systemd:
+    name: docker.service
+    enabled: yes
+
+- name: Add users to docker group.
+  become: yes
+  user:
+    name: "{{ item }}"
+    groups: docker
+    append: true
+  with_items: "{{ docker_users }}"

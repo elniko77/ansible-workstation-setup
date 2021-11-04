@@ -1,0 +1,25 @@
+- name: Installing virt packages
+  become: yes
+  yum:
+    name:
+      - libguestfs-tools
+      - libvirt
+      - qemu-kvm
+      - virt-manager
+      - virt-install
+      - virt-viewer
+    state: latest
+
+- name: Enable libvirtd service
+  become: yes
+  systemd:
+    name: libvirtd.service
+    enabled: yes
+
+- name: Add users to libvirt group.
+  become: yes
+  user:
+    name: "{{ item }}"
+    groups: libvirt
+    append: true
+  with_items: "{{ libvirt_users }}"

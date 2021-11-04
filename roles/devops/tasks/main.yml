@@ -1,0 +1,17 @@
+# Install docker
+- include: docker_debian.yaml
+  when: ansible_os_family == 'Debian'
+
+- include: docker_redhat.yaml
+  when: ansible_os_family == 'RedHat'
+
+
+# Install kvm and required packages
+- include: virt_redhat.yaml
+  when: ansible_os_family == 'RedHat'
+
+
+# Install minikube
+- include: minikube.yaml
+
+

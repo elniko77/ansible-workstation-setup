@@ -8,7 +8,7 @@ You need to have sudo permissions, and install ansible.
 Run the playbook with (comment unneeded roles in workstationsetup.yml):
 
 
-    ansible-playbook workstationsetup.yml
+    ansible-playbook workstationsetup.yml --ask-become-pass
 
 Roles:
 
