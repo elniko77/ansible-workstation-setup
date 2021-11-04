@@ -13,4 +13,13 @@ apt_packages:
     - tmux
     - irssi   
 
+rpm_packages:
+    - vim
+    - curl
+    - nmap
+    - zsh
+    - mc
+    - tmux
+
+
 username: 'nss'

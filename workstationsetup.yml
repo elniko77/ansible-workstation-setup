@@ -1,9 +1,10 @@
 ---
     - hosts: 127.0.0.1
+      gather_facts: yes
       connection: local
       roles:
-        #- base
-        - development
+        - base
+#        - development
         #- laptop
         #- guitools
 #        - virtualization

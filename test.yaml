@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: yes
+
+  tasks:
+
+    - debug: var=ansible_os_family
+    - debug: var=ansible_distribution
+    - debug: var=discovered_interpreter_python
+    - debug: var=ansible_python_interpreter
+
+
