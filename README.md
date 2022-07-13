@@ -1,4 +1,5 @@
-# ansible-environment
+# ansible-workstation-setup
+
 Automated laptop/workstation setup with ansible (for ubuntu)
 
 Ansible script to setup my personal laptop and/or workstation. Tested on ubuntu 18.04.
